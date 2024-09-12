@@ -1,5 +1,6 @@
 import "./App.css";
 import logo from "./Logo_poziom_kolor.svg";
+import logoDark from "./Logo_poziom_kolor_dark.svg";
 import jsLogo from "./Components/Icons/js.svg";
 import tsLogo from "./Components/Icons/ts.svg";
 import reactLogo from "./Components/Icons/react.svg";
@@ -9,7 +10,10 @@ function App() {
     <>
       <div className="rit">
         <div>
-          <img src={logo} alt="Zdjęcie logo" className="logoClass" />
+          <picture>
+            <source srcset={logoDark} media="(prefers-color-scheme: dark)" />
+            <img src={logo} alt="Zdjęcie logo" className="logoClass" />
+          </picture>
           <div>
             <p>Nasze cele</p>
             <p>Oferta kursów</p>
@@ -76,27 +80,66 @@ function App() {
               </p>
               <div>
                 <div className="columnModule">
-                  <h3>Studenci informatyki</h3>
+                  <h3>
+                    Wdrożenie do zawodu{" "}
+                    <span
+                      style={{
+                        color: "#FE5407",
+                      }}
+                    >
+                      Junior Front-end Developer
+                    </span>
+                  </h3>
                   <p>
-                    Skończyłeś studia, lecz chciałbyś pogłębić temat jeszcze
-                    bardziej? Oferujemy zaawansowane kursy dla osób mających
-                    edukacyjne tło w dziedzinie IT.
+                    Przekazujemy wiedzę i doświadczenie pozwalające na podjęcie
+                    pierwszych kroków jako{" "}
+                    <span
+                      style={{
+                        color: "#FE5407",
+                      }}
+                    >
+                      Junior Front-end Developer
+                    </span>
                   </p>
                 </div>
                 <div className="columnModule">
-                  <h3>Pasjonaci IT</h3>
+                  <h3>
+                    Cooperation with{" "}
+                    <span
+                      style={{
+                        color: "#FE5407",
+                      }}
+                    >
+                      Customer
+                    </span>
+                  </h3>
                   <p>
-                    Od dzieciństwa pasjonowałeś się komputerami i chcesz wejść
-                    do większego świata IT? U nas znajdziesz odpowiednie kursy,
-                    które to umożliwią
+                    W ramach naszego programu szkoleń pomożemy rozwinąć soft
+                    skills w zakresie współpracy z{" "}
+                    <span
+                      style={{
+                        color: "#FE5407",
+                      }}
+                    >
+                      klientem
+                    </span>
                   </p>
                 </div>
                 <div className="columnModule">
-                  <h3>Szukający pracy</h3>
+                  <h3>
+                    Rozwiązania dla{" "}
+                    <span
+                      style={{
+                        color: "#FE5407",
+                      }}
+                    >
+                      Biznesu
+                    </span>
+                  </h3>
                   <p>
-                    Znudziła się dotychczasowa praca lub niezadowalają cię
-                    zarobki? Nauczymy cię od podstaw jak stać się
-                    profesjonalistą w tworzeniu stron internetowych
+                    Indywidualnie do potrzeb Twojej firmy skroimy dedykowane
+                    szkolenie. Zależnie od wymagań dobierzemy program i
+                    odpowiednich ekspertów
                   </p>
                 </div>
               </div>
@@ -128,7 +171,7 @@ function App() {
                   <h3>TypeScript</h3>
                   <p>
                     Pokazujemy czym TypeScript różni się od JavaScript i uczymy
-                    typowania.
+                    typowania
                   </p>
                 </div>
                 <div className="columnModule">
@@ -167,29 +210,71 @@ function App() {
               </p>
               <div>
                 <div className="columnModule">
-                  <h3>Ciekawe podejście do nauczania</h3>
+                  <h3>
+                    Praktyka i{" "}
+                    <span
+                      style={{
+                        color: "#FE5407",
+                      }}
+                    >
+                      doświadczenie
+                    </span>
+                  </h3>
                   <p>
-                    Chcesz stworzyć stronę internetową przedstawiającą swoje
-                    artystyczne portfolio? Chcesz stworzyć pierwszą grę
-                    komputerową? U nas się tego nauczysz!
+                    Nasi trenerzy mają doświadczenie praktyczne i zawodowe.
+                    Przedstawią wiedzę teoretyczną w połączeniu z dobrymi
+                    praktykami wynikającymi z własnych doświadczeń
                   </p>
                 </div>
                 <div className="columnModule">
-                  <h3>Wsparcie profesjonalisnych trenerów</h3>
+                  <h3>
+                    Przedstawienie{" "}
+                    <span
+                      style={{
+                        color: "#FE5407",
+                      }}
+                    >
+                      konkretnych
+                    </span>{" "}
+                    metod
+                  </h3>
                   <p>
-                    Napotkasz w trakcie realizacji projektu problem z kodem? Nie
-                    obawiaj się. U nas będziesz mógł z pomocą trenera krok po
-                    kroku prześledzić, które elementy kodu mogą wywoływać błędy
-                    i jak można je poprawić.
+                    Przedstawimy wam realizację projektu z wykorzystaniem{" "}
+                    <span
+                      style={{
+                        color: "#FE5407",
+                      }}
+                    >
+                      konkretnych
+                    </span>{" "}
+                    narzędzi. Uczymy zgodnie z najnowszymi trendami i z
+                    wykorzystaniem współczesnych narzędzi umożliwiających
+                    tworzenie estetycznych projektów w wydajny sposób
                   </p>
                 </div>
                 <div className="columnModule">
-                  <h3>Nauka bez oceniania</h3>
+                  <h3>
+                    Wspólne osiąganie{" "}
+                    <span
+                      style={{
+                        color: "#FE5407",
+                      }}
+                    >
+                      wyników
+                    </span>
+                  </h3>
                   <p>
-                    Masz złe wspomnienia ze szkoły lub obawiasz się bycia
-                    niedocenionym? U nas nie oceniamy! Możesz być pewien, że
-                    nasi trenerzy okażą przyjacielskie podejście i pomogą w
-                    rozwiązaniu problemów z kodem.
+                    Dla nas proces szkolenia jest formą współpracy. Obustronne
+                    zaangażowanie jest podstawią{" "}
+                    <span
+                      style={{
+                        color: "#FE5407",
+                      }}
+                    >
+                      wspólnego sukcesu
+                    </span>
+                    . Poprzez szkolenia tworzymy społeczność w ramach której
+                    wzajemnie się wspiery i wspólnie pokonujemy wyzwania
                   </p>
                 </div>
               </div>
@@ -278,13 +363,9 @@ function App() {
           </div>
         </div>
 
-        <div className="secondSection">
+        <div className="lastSection">
           <div>
-            <p
-              style={{
-                width: "480px",
-              }}
-            >
+            <p>
               <span>Rockin'iT sp. z o.o.</span>
             </p>
             <p>al. Zwycięstwa 96 / 98</p>
@@ -293,21 +374,20 @@ function App() {
               class="button"
               href="mailto:letsrock@rockinit.pl"
               style={{
+                borderRadius: "8px",
+                border: "1px solid transparent",
+                padding: "0.6em 1.2em",
+                fontSize: "1em",
                 color: "#FE5407",
                 margin: "0 0 32px 0",
                 display: "block",
-                backgroundColor: "#FFFFFF",
+                backgroundColor: "light-dark(#F9F9F9, #1A1A1A)",
                 width: "280px",
-                height: "32px",
+                textAlign: "center",
               }}
             >
               Kliknij żeby napisać do nas maila
             </a>
-          </div>
-          <div className="logoBoxes">
-            <div className="logoBoxesRow">
-              <div className="floatingblack"></div>
-            </div>
           </div>
         </div>
       </div>

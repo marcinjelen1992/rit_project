@@ -52,6 +52,32 @@
   color: #FE5407;
 }
 
+.lastSection {
+  background-color: #000000;
+  color: #FAFAFA;
+  padding-left: 100px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.lastSection > :first-child > :first-child {
+  font-size: 48px;
+  font-weight: bold;
+  width: 480px;
+}
+
+.lastSection > :first-child > :first-child > span {
+  color: #FE5407;
+}
+
+.lastSection > :first-child > :nth-child(2) {
+  width: 365px;
+}
+
+.lastSection > :first-child > :nth-child(2) > span {
+  color: #FE5407;
+}
+
 .logoBoxes {
   display: flex;
   flex-direction: column;
@@ -121,6 +147,9 @@
   width: 127px;
   height: 30px;
   }
+.rit {
+  width: 100vw;
+}
   .rit > :first-child {
     flex-direction: column;
   }
@@ -147,6 +176,15 @@
   .secondSection > :first-child > :nth-child(2) {
     width: 320px;
   }
+
+  .lastSection {
+    padding-left: 8px;
+  }
+  
+  .lastSection > :first-child > :first-child {
+    font-size: 32px;
+    width: 340px;
+  }
   .columnModule {
     width: 100px;
     font-size: 12px;
@@ -161,20 +199,3 @@
   }
 }
 
-.div_nr1 {
-  margin: 20px 20px 15px 30px;
-  border: 2px solid slateblue;
-  padding: 20px 20px 15px 30px;
-  background: darkorange;
-  box-sizing: content-box;
-  width: 200px;
-}
-
-.div_nr2 {
-  margin: 20px 20px 15px 30px;
-  border: 2px solid slateblue;
-  padding: 20px 20px 15px 30px;
-  background: darkorange;
-  box-sizing: border-box;
-  width: 200px;
-}
